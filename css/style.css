@@ -6,11 +6,12 @@
 
 /****** GENERALI ******/
 body{
-  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
+
 .container{
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 
@@ -27,6 +28,7 @@ header{
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 500;
 }
 
 header img{
@@ -48,7 +50,7 @@ header li{
 header a{
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #menu-mobile{
@@ -60,7 +62,7 @@ header a{
   background-color: #fff;
 }
 
-/****** CARD TOP ******/
+/****** CARD SECTION TOP ******/
 #card-space{
   margin-top: 100px;
   margin-bottom: 60px;
@@ -77,12 +79,75 @@ header a{
   background-color: #B5DDFF;
   width: calc(100% / 3 - 10px);
   border-radius: 20px;
+  font-weight: 700;
   /* debug */
-  min-height: 230px;
+  min-height: 250px;
 }
 
 .card.big{
   width: calc( (100% / 3 - 2px) * 2);
+  display: flex;
+  padding: 20px 20px 0;
+}
+
+#card-descr{
+  width: 60%;
+  padding-bottom: 30px;
+}
+
+#card-descr h2{
+  color: #0084fd;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+#card-descr p{
+  color: #5a6e7f;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.btn.blue{
+  text-decoration: none;
+  background-color: #0084fd;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 3px;
+  padding: 8px 25px;
+}
+
+#img-big{
+  display: flex;
+}
+
+.card img{
+  width: 200px;
+  align-self: flex-end;
+}
+
+/********* 3 card *********/
+.card.top{
+  text-align: center;
+  padding: 15px;
+}
+
+.card.top h2{
+  color: #0084fd;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.card.top p{
+  color: #5a6e7f;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.card.top i{
+  color: #0084fd;
+  font-size: 55px;
+  margin-bottom: 20px;
 }
 
 /****** APP DEVELOPMENT VIOLET ******/
@@ -94,7 +159,7 @@ header a{
 }
 
 #wrapper{
-  width: 45%;
+  width: 50%;
   margin: auto;
 }
 
@@ -192,12 +257,28 @@ header a{
     display: none;
   }
 
-  .container{
+  #wrapper, .container{
     width: 90%;
   }
 
-  #wrapper{
-    width: 90%;
+  #card-descr{
+    width: 100%;
+  }
+
+  #card-descr p {
+    font-size: 14px;
+  }
+  
+  .btn.blue, .card.top p{
+    font-size: 15px;
+  }
+
+  #card-descr h2, .card.top h2{
+    font-size: 20px;
+  }
+
+  .card.big{
+    flex-direction: column;
   }
 
   #card-wrap{
