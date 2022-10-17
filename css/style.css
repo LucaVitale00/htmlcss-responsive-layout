@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/****** GENERALI ******/
+body{
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+.container{
+  width: 60%;
+  margin: auto;
+}
+
+.btn{
+  padding: 6px 13px;
+  border-radius: 30px;
+}
+
+/****** HEADER ******/
+header{
+  background-color: #0084FD;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header img{
+  transform: scale(0.75);
+}
+
+header .container{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.white{ 
+  color: #000;
+  background-color: #fff;
+}
+
+/****** CARD TOP ******/
+#card-space{
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 15px;
+}
+
+.card{
+  background-color: #B5DDFF;
+  width: calc(100% / 3 - 10px);
+  border-radius: 20px;
+  /* debug */
+  min-height: 230px;
+}
+
+.card.big{
+  width: calc( (100% / 3 - 2px) * 2);
+}
+
+/****** APP DEVELOPMENT VIOLET ******/
+.violet{
+  background-color: #9792E4;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+#wrapper{
+  width: 45%;
+  margin: auto;
+}
+
+#card-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap-img{
+  background-color: #fff;
+  width: 45%;
+  border-radius: 30px;
+  /* debug */
+  min-height: 400px;
+}
+
+/****** TESTIMONIALS ******/
+.testimonials{
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.test-card{
+  background-color: #9792E4;
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  /* debug */
+  height: 150px;
+}
+
+/****** BENEFIT ******/
+.card.benefit {
+  background-color: #fff;
+  min-height: 300px;
+}
+
+/****** ABOUT US ******/
+.about{
+  display: flex;
+  min-height: 700px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.about-descr{
+  width: 70%;
+  /* debug */
+  background-color: #60b5ff;
+}
+
+.about-img{
+  width: 30%;
+   /* debug */
+   background-color: #8ecaff;
+}
+
+/****** FOOTER ******/
+.ftr-wrap{
+  display: flex;
+  width: 30%;
+  margin: auto;
+  min-height: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* debug */
+  background-color: #fff;
+}
+
+/****** FOOTER BOTTOM ******/
+.black{
+  background-color: #333333;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.ftr-wrap.dark{
+  min-height: 150px;
+}
