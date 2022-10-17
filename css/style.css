@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -49,6 +49,10 @@ header a{
   text-decoration: none;
   color: #fff;
   font-size: 14px;
+}
+
+#menu-mobile{
+  display: none;
 }
 
 .white{ 
@@ -133,7 +137,6 @@ header a{
 /****** ABOUT US ******/
 .about{
   display: flex;
-  min-height: 700px;
   padding-top: 60px;
   padding-bottom: 50px;
 }
@@ -141,19 +144,21 @@ header a{
 .about-descr{
   width: 70%;
   /* debug */
+  min-height: 400px;
   background-color: #60b5ff;
 }
 
 .about-img{
   width: 30%;
    /* debug */
+   min-height: 400px;
    background-color: #8ecaff;
 }
 
 /****** FOOTER ******/
 .ftr-wrap{
   display: flex;
-  width: 30%;
+  width: 40%;
   margin: auto;
   min-height: 300px;
   padding-top: 30px;
@@ -173,3 +178,102 @@ header a{
 .ftr-wrap.dark{
   min-height: 150px;
 }
+
+/*********** RESPONSIVE ************/
+  /******* TABLET *******/
+@media screen and (max-width:768px) {
+  #menu-mobile{
+    display: block;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  #menu-desktop{
+    display: none;
+  }
+
+  .container{
+    width: 90%;
+  }
+
+  #wrapper{
+    width: 90%;
+  }
+
+  #card-wrap{
+    display: block;
+    width: 100%;
+  }
+
+  .wrap-img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card.benefit{
+    width: calc(100% / 2 - 10px);
+  }
+
+  .ftr-wrap{
+    width: 60%;
+  }
+  }
+
+  /********** SMARTPHONE **********/
+  @media screen and (max-width:480px) {
+    #menu-mobile{
+      display: block;
+      color: #fff;
+      font-size: 30px;
+    }
+  
+    #menu-desktop{
+      display: none;
+    }
+    
+    .cards{
+      display: block;
+    }
+
+    .card, .card.big{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .container{
+      width: 90%;
+    }
+  
+    #wrapper{
+      width: 90%;
+    }
+  
+    #card-wrap{
+      display: block;
+      width: 100%;
+    }
+  
+    .wrap-img{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .card.benefit{
+      width: 90%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  
+    .about{
+      display: block;
+    }
+
+    .about-descr, .about-img{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .ftr-wrap{
+      width: 80%;
+    }
+  }
