@@ -6,7 +6,7 @@
 
 /****** GENERALI ******/
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 
@@ -154,7 +154,7 @@ header a{
 .violet{
   background-color: #9792E4;
   width: 100%;
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -287,9 +287,48 @@ header a{
 }
 
 /****** BENEFIT ******/
+.purple h2{
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
 .card.benefit {
   background-color: #fff;
   min-height: 300px;
+  padding: 20px;
+}
+
+.card.benefit span{
+  font-size: 50px;
+  color: #9792E4;
+}
+
+.card.benefit h3{
+  font-size: 16px;
+  color: #9792E4;
+  margin: 10px 0 15px;
+}
+
+.card.benefit p{
+  font-size: 11px;
+  color: #5a6e7f;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.card.benefit a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.lilac{
+  background-color: #9792E4;
+  font-size: 10px;
+  letter-spacing: 3px;
+  padding: 6px 25px;
 }
 
 /****** ABOUT US ******/
@@ -301,16 +340,62 @@ header a{
 
 .about-descr{
   width: 70%;
+  padding: 0 20px;
   /* debug */
   min-height: 400px;
-  background-color: #60b5ff;
+}
+
+.about-descr h2{
+  color: #9792E4;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.about-descr p{
+  font-size: 13px;
+  line-height: 2.2;
+  margin-bottom: 20px;
 }
 
 .about-img{
   width: 30%;
-   /* debug */
-   min-height: 400px;
-   background-color: #8ecaff;
+  position: relative;
+}
+
+.about-img img{
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 40px;
+}
+
+.about-img .fa-quote-left{
+  color: #9792E4;
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  right: 35px;
+}
+
+.about-img h3{
+  color: #9792E4;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 10px 40px;
+}
+
+.about-img a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 9px;
+  padding: 6px 15px;
+  border-radius: 20px;
+  background-color: #9792E4;
+  margin-left: 40px;
+}
+
+.fa-linkedin{
+  margin-right: 5px;
 }
 
 /****** FOOTER ******/
